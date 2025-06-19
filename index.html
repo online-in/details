@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bharath | My Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="container-main">
+    <aside class="sidebar">
+        <div class="profile-pic-wrap">
+            <img src="../portfolio/bharath-profile.jpg" alt="Profile" class="profile-pic" />
+        </div>
+        <h1 class="profile-name">G Bharath</h1>
+        <p class="profile-title">Frontend Developer</p>
+        <p class="profile-location"><i class="fas fa-map-marker-alt"></i> India</p>
+        <a href="mailto:bharathkumargorle1744@gmail.com" class="profile-email"><i class="fas fa-envelope"></i> Email</a>
+        <div class="profile-socials">
+            <a href="https://github.com/your-github" class="profile-social-btn" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/your-twitter" class="profile-social-btn" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/your-instagram" class="profile-social-btn" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/bharath-kumar-gorle-78ba53333" class="profile-social-btn" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <a href="Bharath Adhar .pdf" class="btn btn-solid btn-cv" download><i class="fas fa-download"></i> Download CV</a>
+        <div class="profile-about">
+            <h2>About Me</h2>
+            <p>Dedicated and detail-oriented individual with a passion for technology and learning. Experienced in web development and always eager to explore new opportunities. Reach out for collaborations or queries!</p>
+        </div>
+        <div class="profile-skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><span>HTML/CSS</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></li>
+                <li><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></li>
+                <li><span>Python</span><div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div></li>
+                <li><span>UI/UX</span><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></li>
+            </ul>
+        </div>
+        <button id="dark-mode-toggle" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    </aside>
+    <main class="main-content">
+        <header class="main-header">
+            <h2>My Documents</h2>
+            <a href="#" class="btn btn-outline" id="download-all" title="Download all as zip"><i class="fas fa-download"></i> Download All</a>
+        </header>
+        <section class="documents-grid">
+            <article class="doc-card" data-file="Bharath Adhar .pdf">
+                <i class="fas fa-id-card doc-icon"></i>
+                <div class="doc-info">
+                    <h3>Bharath Adhar</h3>
+                    <span class="file-size">...</span>
+                </div>
+                <a href="Bharath Adhar .pdf" class="btn btn-outline" download>Download</a>
+            </article>
+            <article class="doc-card" data-file="10 Marks.pdf">
+                <i class="fas fa-file-alt doc-icon"></i>
+                <div class="doc-info">
+                    <h3>10th Marks Memo</h3>
+                    <span class="file-size">...</span>
+                </div>
+                <a href="10 Marks.pdf" class="btn btn-outline" download>Download</a>
+            </article>
+            <article class="doc-card" data-file="Inter Marks.pdf">
+                <i class="fas fa-file-alt doc-icon"></i>
+                <div class="doc-info">
+                    <h3>Intermediate Marks Memo</h3>
+                    <span class="file-size">...</span>
+                </div>
+                <a href="Inter Marks.pdf" class="btn btn-outline" download>Download</a>
+            </article>
+            <article class="doc-card" data-file="Cast Certificate.pdf">
+                <i class="fas fa-certificate doc-icon"></i>
+                <div class="doc-info">
+                    <h3>Caste Certificate</h3>
+                    <span class="file-size">...</span>
+                </div>
+                <a href="Cast Certificate.pdf" class="btn btn-outline" download>Download</a>
+            </article>
+            <article class="doc-card" data-file="Income Certificate.pdf">
+                <i class="fas fa-certificate doc-icon"></i>
+                <div class="doc-info">
+                    <h3>Income Certificate</h3>
+                    <span class="file-size">...</span>
+                </div>
+                <a href="Income Certificate.pdf" class="btn btn-outline" download>Download</a>
+            </article>
+            <article class="doc-card" data-file="Signature.pdf">
+                <i class="fas fa-file-signature doc-icon"></i>
+                <div class="doc-info">
+                    <h3>Signature</h3>
+                    <span class="file-size">...</span>
+                </div>
+                <a href="Signature.pdf" class="btn btn-outline" download>Download</a>
+            </article>
+            <article class="doc-card" data-file="PAN CARD BHARATH.pdf">
+                <i class="fas fa-id-badge doc-icon"></i>
+                <div class="doc-info">
+                    <h3>PAN Card</h3>
+                    <span class="file-size">...</span>
+                </div>
+                <a href="PAN CARD BHARATH.pdf" class="btn btn-outline" download>Download</a>
+            </article>
+            <article class="doc-card" data-file="Inter TC.pdf">
+                <i class="fas fa-file-contract doc-icon"></i>
+                <div class="doc-info">
+                    <h3>Intermediate TC</h3>
+                    <span class="file-size">...</span>
+                </div>
+                <a href="Inter TC.pdf" class="btn btn-outline" download>Download</a>
+            </article>
+        </section>
+        <footer class="main-footer">
+            <p>Copyright © 2024 Bharath. All Rights Reserved.</p>
+        </footer>
+    </main>
+</div>
+<script src="script.js"></script>
+<script>
+// Dark mode toggle and file size population
+const darkToggle = document.getElementById('dark-mode-toggle');
+function setDarkIcon() {
+  if (!darkToggle) return;
+  if (document.body.classList.contains('dark-mode')) {
+    darkToggle.innerHTML = '<i class="fas fa-sun"></i>';
+  } else {
+    darkToggle.innerHTML = '<i class="fas fa-moon"></i>';
+  }
+}
+if (darkToggle) {
+  darkToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    setDarkIcon();
+  });
+  setDarkIcon();
+}
+// File size population
+Array.from(document.querySelectorAll('.doc-card')).forEach(card => {
+  const file = card.getAttribute('data-file');
+  const sizeSpan = card.querySelector('.file-size');
+  fetch(file, { method: 'HEAD' }).then(resp => {
+    const size = resp.headers.get('content-length');
+    if (size) {
+      let kb = (parseInt(size, 10) / 1024).toFixed(1);
+      sizeSpan.textContent = kb > 1024 ? (kb/1024).toFixed(2) + ' MB' : kb + ' KB';
+    } else {
+      sizeSpan.textContent = '';
+    }
+  }).catch(() => { sizeSpan.textContent = ''; });
+});
+</script>
+</body>
+</html>
